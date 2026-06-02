@@ -1,0 +1,1 @@
+# minio_industrial_iot
