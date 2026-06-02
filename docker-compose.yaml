@@ -1,0 +1,12 @@
+services:
+  minio:
+    image: minio/minio:latest
+    ports: 
+      - 9000:9000 # s3
+      - 9001:9001 # web console
+    volumes:
+      - ./minio_data:/mnt/data
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
+    command: minio server /mnt/data --console-address :9001

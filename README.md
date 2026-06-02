@@ -48,3 +48,13 @@ On supprime les anomalies (`is_anomaly` = 1). La colonne `is_anomaly` disparaît
 ### Curated -> Archived
 Données des 180 derniers jours archivés. 
 
+# Détails techniques
+
+Demarrer l'infrastructure
+```sh
+docker compose up -d
+```
+L'interface web de minio est disponible sur [localhost:9001](http://localhost:9001)  
+Le compte admin de l'interface est à définir dans le fichier `.env` (voir [.env.example](./.env.example))  
+
+Le fichier [justfile](./justfile) récapitule toutes les commandes nécessaires
