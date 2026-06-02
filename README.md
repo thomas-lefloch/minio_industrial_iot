@@ -50,7 +50,13 @@ Données des 180 derniers jours archivés.
 
 # Détails techniques
 
-Demarrer l'infrastructure
+## Les composants
+
+- Minio: s3 storage
+
+## Get started
+
+### Démarrer l'infrastructure
 ```sh
 docker compose up -d
 ```
@@ -58,3 +64,7 @@ L'interface web de minio est disponible sur [localhost:9001](http://localhost:90
 Le compte admin de l'interface est à définir dans le fichier `.env` (voir [.env.example](./.env.example))  
 
 Le fichier [justfile](./justfile) récapitule toutes les commandes nécessaires
+
+## Architecture des fichiers du projet
+
+- exploration: contient des scripts jetables réaliser lors de l'exploration et la préparation du projet
