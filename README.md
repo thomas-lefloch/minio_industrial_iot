@@ -67,4 +67,6 @@ Le fichier [justfile](./justfile) récapitule toutes les commandes nécessaires
 
 ## Architecture des fichiers du projet
 
-- exploration: contient des scripts jetables réaliser lors de l'exploration et la préparation du projet
+- exploration: contient des scripts jetables réalisés lors de l'exploration et la préparation du projet
+- minio: contient les fichiers nécessaire à la mise en place de minio (setup, upload de fichiers, ...)
+- source_dataset: download and extract the dataset inside this folder
