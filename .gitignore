@@ -220,3 +220,4 @@ __marimo__/
 source_dataset/*
 brief.md
 minio_data/*
+airflow/logs/**/*

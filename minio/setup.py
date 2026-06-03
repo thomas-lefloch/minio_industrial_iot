@@ -29,4 +29,4 @@ for bucket in buckets_to_create :
         ACL="private",
         Bucket=bucket
     )
-    print(f"Created {minio_endpoint}{bucket} !")
+    print(f"Created Bucket '{minio_endpoint}{bucket}'")
